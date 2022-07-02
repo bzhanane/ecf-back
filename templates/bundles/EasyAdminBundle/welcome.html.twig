@@ -1,0 +1,30 @@
+{# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title '' %}
+
+{% block main %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 alert-success">
+                <h2 class="display-3">Home</h2>
+                jobs
+            </div>`
+            <div class="col-4 alert-success">
+                <h2 class="display-3">Admin</h2>
+
+            </div>
+        </div>
+            {% for job in jobs %}
+        <div>
+ {{ job.description }}
+            {{ job.typeContract}}
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
+{% endblock %}
