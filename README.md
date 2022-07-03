@@ -25,4 +25,10 @@ DATABASE_URL='mysql://root:@127.0.0.1:3306/crud_symfony'
 - Exécution du projet
 
   symfony server:start
+  
+  
+Vous pouvez initialiser la base de donnée par le fichier data-jobs-ecf 
+
+le mot de passe pour le compte admin : hanane
+le mot de passe pour le compte sociéte : company 
 
