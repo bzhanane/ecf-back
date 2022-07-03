@@ -10,7 +10,14 @@
 
     <div class="example-wrapper">
         {% for job in liste %}
-         <a href={{"/candidats/offer/"~job.id}}> <li>{{ job.description }}</li> </a>
+         <a href={{"/candidats/offer/"~job.id}}>
+             <h1>Company</h1>
+             <li>{{ job.description }}</li>
+            <li>{{ job.requirement }}</li>
+             <li>{{ job.typeContract }}</li>
+             <li>{{ job.posted.format('d/m/Y')}}</li>
+         </a>
+
         {% endfor %}
     </div>
 {% endblock %}
